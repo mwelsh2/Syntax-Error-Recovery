@@ -1,25 +1,16 @@
-Melissa Welsh - mwelsh2@u.rochester.edu
-CSC 254 - A2
+# To Run
+Type `make` into your command line to compile.
+- To run example tests: type `make test` into your command line.
+- To run your own tests: type `./parse < yourfile.txt`.
 
-------------
--- TO RUN --
-------------
-Type ~make~ into your command line to compile.
-- To run example tests: type ~make test~ into your command line.
-- To run your own tests: type ~./parse < yourfile.txt~.
-
--------------
--- CONTENT --
--------------
+# Content
 - parse.cpp
 - scan.cpp
 - scan.h
-- ast.cpp   // Defines classes and methods for an abstract syntax tree
+- ast.cpp
 - ast.h 
 
---------------
--- Features --
---------------
+# Features
 - parse.cpp, scan.cpp, and scan.h modified from C code to C++.
 - Program prints an AST on successful input, or a list of syntax errors along 
 with the final transformed input.
@@ -34,8 +25,6 @@ printing methods for statement list and branch statement nodes.
 - Method match and all subroutines in parse.cpp are modified to return AST
 nodes to help build the syntax tree. 
 
------------------
--- Limitations --
------------------
-- Make sure there are spaces between input characters. For example, (A + B) will
-not work, but ( A + B ) will.
+# Limitations
+- Make sure there are spaces between input characters. For example, `(A + B)` will
+not work, but `( A + B )` will.
